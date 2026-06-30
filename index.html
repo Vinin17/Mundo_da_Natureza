@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,107 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="conteiner-principal">
-        <div class="quadrado logo"><p>Logo</p></div>
-        <div class="quadrado link"><p>links</p></div>
+
+    <header class="banner">
+        <div class="logo">
+            🌿 Mundo da Natureza
+        </div>
+        <nav class="navegação">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Curiosidades</a>
+            <a href="#">Contato</a>
+
+        </nav>
+    </header>
+
+    <div class="conteudo">
+
+        <main class="principal">
+            <div class="card">
+                <h2>🌳 Florestas</h2>
+                <p>As florestas cobrem cerca de 31% da superfície terrestre e são essenciais para o equilíbrio do clima.</p>
+            </div>
+            <div class="card">
+                <h2>🌊 Oceanos</h2>
+                <p>Os oceanos produzem mais de 50% do oxigênio que respiramos e regulam a temperatura do planeta.</p>
+            </div>
+            <div class="card">
+                <h2>🦁 Animais</h2>
+                <p>Existem mais de 8 milhões de espécies de animais na Terra, mas muitas ainda não foram descobertas.</p>
+            </div>
+            <div class="card">
+                <h2>🌺 Flores</h2>
+                <p>Existem mais de 400 mil espécies de plantas com flores catalogadas no mundo inteiro.</p>
+            </div>
+            <section class="formulario">
+                <h2>📬 Entre em Contato</h2>
+                <form>
+                    <label>Nome Completo *</label>
+                    <input type="text" placeholder="Digite seu nome completo" required>
+                    <label>CPF</label>
+                    <input type="text" placeholder="000.000.000-00" maxlength="14">
+                    <label>Data de Nascimento</label>
+                    <input type="date">
+                    <label>E-mail *</label>
+                    <input type="email" placeholder="exemplo@email.com" required>
+                    <label>Telefone</label>
+                    <input type="tel" placeholder="(00) 00000-0000">
+                    <label>Assunto</label>
+                    <select>
+                        <option value="">Selecione um assunto</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="parceria">Parceria</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <label>Mensagem *</label>
+                    <textarea placeholder="Digite sua mensagem aqui..." rows="5" required></textarea>
+                    <div class="checkbox-area">
+                        <input type="checkbox" id="termos" required>
+                        <label for="termos">Li e aceito os termos de uso *</label>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+
+        <aside class="lateral">
+            <h3>💡 Você sabia?</h3>
+            <div class="dica">
+                <p>🌱 Uma árvore adulta pode absorver até 22kg de CO₂ por ano.</p>
+            </div>
+            <div class="dica">
+                <p>💧 Apenas 3% da água do planeta é doce e própria para consumo.</p>
+            </div>
+            <div class="dica">
+                <p>🐝 As abelhas são responsáveis por polinizar 70% dos alimentos que comemos.</p>
+            </div>
+        </aside>
+
     </div>
+
+    <footer class="rodape">
+        
+        <div class="coluna">
+            <h4>Sobre Nós</h4>
+            <p>Somos um site dedicado a compartilhar informações e curiosidades sobre o mundo natural.</p>
+        </div>
+
+        <div class="coluna">
+            <h4>Contato</h4>
+            <p>📧 contato@mundodanatureza.com</p>
+            <p>📞 (51) 4002-8922</p>
+        </div>
+
+        <div class="coluna">
+            <h4>Redes Sociais</h4>
+            <p>📸 Instagram</p>
+            <p>👍 Facebook</p>
+            <p>🐦 Twitter</p>
+        </div>
+
+    </footer>
+
 </body>
 </html>
